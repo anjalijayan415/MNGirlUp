@@ -1,21 +1,46 @@
-.title {
-    color: white;
-    
-}
+
 
 body {
     background-color: pink;
+    text-align: center;
 }
 
-.header {
-  padding: 60px;
-  position:fixed;
+#header {
   text-align: center;
-  background: #1abc9c;
   color: white;
-  font-size: 30px;
-  width: auto;
-  height: auto;
+  font-size: 20px;
+  height: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+.tabbuttons {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;  
+  
+}
+/* Style the buttons that are used to open the tab content */
+.tabbuttons button{
+  background-color: green;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tabbuttons:hover {
+  background-color: blue;
+}
+
+/* Create an active/current tablink class */
+.tabbuttons buttons.active {
+  background-color: purple;
 }
 
 

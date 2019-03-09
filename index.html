@@ -1,21 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
+ <head>
         <title> Millard North Girl Up </title> 
         <link rel="stylesheet" type="text/css" href= "css/style.css" >
     </head>
     <body>
             <!-- Copy and paste on every page -->
             
-<div class="header">
-  <h1>Header</h1>
-  <p>My supercool header</p>
+            <img src= "images/girluplogopic.jpg" width="400" alt="Girl Up">
+          
+ <div id="header"> 
+  <h1>Header </h1>
+</div>
+            
+<!-- Tabs -->
+<div class="tabbuttons">
+  <button class="tablinks" onclick="openTab(event, 'Tab1container')">Tab1</button>
+  <button class="tablinks" onclick="openTab(event, 'Tab2container')">Tab2</button>
+  <button class="tablinks" onclick="openTab(event, 'Tab3container')">Tab3</button>
 </div>
 
-<div class="subheader">
-  <h1>Header</h1>
-  <p>Yupr</p>
+<script>
+function openTab(event, Tabcontainer) {
+	console.log(event);
+	var hideThese = document.getElementsByClassName("hidden");
+	var i; 
+	for (i = 0; i < hideThese.length; i++) {
+	    hideThese[i].style.display="none";
+    }
+  document.getElementById(Tabcontainer).style.display="block";
+}
+</script>
+<br> </br>
+<div id="Tab1container" class= "hidden"> 
+  <h1>About </h1>
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ </p> 
+    
 </div>
-            <img src= "images/girluplogopic.jpg" width="400" alt="Girl Up">
+
+<div id="Tab2container" class= "hidden"> 
+  <h1>Meetings </h1>
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ </p> 
+    
+</div>
+
+<div id="Tab3container" class= "hidden"> 
+  <h1>Fundraising </h1>
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ </p> 
+    
+</div>
+
     </body>
 </html>
